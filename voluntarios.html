@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Judson:ital,wght@0,400;0,700;1,400&family=Montserrat&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>Hazte Voluntario</title>
+	<meta name="description" content="Página de voluntarios de la biblioteca de las cosas">
+	<link href="css/estilos.css" rel="stylesheet" type="text/css">
+
+	<script>
+let menuButton = document.querySelector('.menu-button');
+		let menu = document.querySelector('#menu');
+		menuButton.addEventListener('click', function () {
+			menu.classList.toggle('hidden');
+		});
+		window.addEventListener('resize', function () {
+			if (window.innerWidth <= 768) {
+				menu.classList.add('hidden');
+			} else {
+				menu.classList.remove('hidden');
+			}
+		});
+	</script>
+
+</head>
+
+<body>
+	<header>
+		<div class="cabecera">
+			<figure>
+				<a href="index.html" tabindex="1">
+					<img class="logotipo" src="images/logo_modificado.svg"
+						 alt="Se muestra el logotipo de La Biblioteca de las Cosas">
+				</a>
+			</figure>
+			<nav>
+				<button class="menu-button" aria-label="Abrir menú de navegación"><img class="img_hamburguesa" src="images/menu_hamburguesa_2.svg" alt="Imagen menú hamburguesa"></button>
+				<ul class="menu" id="menu">
+					<li tabindex="2"><a href="index.html">INICIO</a></li>
+					<li tabindex="3"><a href="prestamos.html">PRÉSTAMOS</a></li>
+					<li tabindex="4"><a href="voluntarios.html">HAZTE VOLUNTARIO</a></li>
+					<li tabindex="5"><a href="socios.html">HAZTE SOCIO</a></li>
+					<li tabindex="6"><a href="#">ENTRAR/REGISTRO</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="info">
+			<div>
+				<figure><img class="img_principal" src="images/hazte_voluntario.jpg" alt="Imagen del equipo de La biblioteca de las cosas"></figure>
+			</div>
+			<div class="apartado">
+				<h1>Hazte Voluntario</h1>
+				<p>Si estas interesado o interesada en la economía circular, quieres saber cómo funciona, te sientes identificado o identificada con nuestra filosofía de empresa o quieres aportar tus conocimientos o adquirir experiencia, puedes hacerte voluntario o voluntaria por el tiempo que tu escojas.</p>
+				<p>Hay varias formas de hacer voluntariado: puedes ayudar a gestionar almacenes catalogando los artículos disponibles, participar en nuestros talleres de concienciación, recoger objetos que cualquier persona quiera donar y sean de utilidad o incluso donar objetos de tu propiedad que consideres.</p>
+				<p>Como agradecimiento por tú inestimable labor, obtendrás grandes descuentos y beneficios en nuestros servicios. Si estás interesado, haz clic en formulario y registra la información que te solicitamos.</p>
+				<p><a class="boton" href="index.html">FORMULARIO</a></p>
+			</div>
+		</div>
+
+		<div class="voluntarios">
+			<div class="vol_info">
+				<h1>CONOCE A NUESTROS VOLUNTARIOS</h1>
+				<p>En este apartado podrás conocer a algunos de nuestros voluntarios, podrás averiguar cuáles son sus funciones en nuestra empresa, que les motiva a prestar su ayuda, aficiones y tiempo que invierten ayudando en nuestra <span class="bold">Biblioteca de las Cosas.</span></p>
+			</div>
+
+			<div class="vol_todos">
+				<div class="vol_datos">
+					<figure><img class="img_secundaria" src="images/voluntario_1.jpg" alt="Imagen de voluntario 1"></figure>
+					<h1>Juan</h1>
+					<p>68 Años - Jubilado</p>
+					<p><a class="boton" href="#">MAS INFO</a></p>
+				</div>
+
+				<div class="vol_datos">
+					<figure><img class="img_secundaria" src="images/voluntaria_2.jpg" alt="Imagen de voluntaria 2"></figure>
+					<h1>Maria</h1>
+					<p>37 Años - Autónoma</p>
+					<p><a class="boton" href="#">MAS INFO</a></p>
+				</div>
+
+				<div class="vol_datos">
+					<figure><img class="img_secundaria" src="images/voluntaria_3.jpg" alt="Imagen de voluntaria 3"></figure>
+					<h1>Elba</h1>
+					<p>48 Años - Profesora de primaria</p>
+					<p><a class="boton" href="#">MAS INFO</a></p>
+				</div>
+
+				<div class="vol_datos">
+					<figure><img class="img_secundaria" src="images/voluntaria_4.jpg" alt="Imagen de voluntaria 4"></figure>
+					<h1>Shaila</h1>
+					<p>21 Años - Universitaria</p>
+					<p><a class="boton" href="#">MAS INFO</a></p>
+				</div>
+			</div>
+		</div>
+
+
+
+	</main>
+	<footer>
+		<div class="container_footer">
+		<div class="contacto">
+			<h2>CONTÁCTANOS</h2>
+			<ul>
+				<li>C/ El Invento nº10</li>
+				<li>35007 - Las Palmas de Gran Canaria</li>
+				<li>Tlfn: 928 000 000</li>
+				<li>Mail:<a href="mailto:bibliotecacosas@gmail.com">bibliotecacosas@gmail.com</a></li>
+			</ul>
+		</div>
+		<div class="rr_ss">
+			<h2>NUESTRAS REDES</h2>
+			<ul>
+				<li>
+					<a class="facebook" href="https://www.facebook.com">
+						<img src="./images/icons8-facebook-f.svg"
+							 alt="">
+					</a>
+				</li>
+				<li>
+					<a class="twitter" href="https://www.twitter.com">
+						<img src="./images/icons8-twitter.svg"
+							 alt="">
+					</a>
+				</li>
+				<li>
+					<a class="instagram" href="https://www.instagram.com">
+						<img src="./images/icons8-instagram.svg"
+							 alt="">
+					</a>
+				</li>
+				<li>
+					<a class="youtube" href="https://www.youtube.com">
+						<img src="./images/icons8-youtube-play.svg"
+							 alt="">
+					</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</footer>
+</body>
+</html>
