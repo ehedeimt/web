@@ -230,7 +230,7 @@ a:hover {
     .formulario placeholder {
         font-family: "Montserrat";
         color: black;
-        font-size: 12px;
+        font-size: 20px;
     }
 
     /*Formatos formularios*/
@@ -448,7 +448,7 @@ a:hover {
     .formulario {
         font-family: "Montserrat";
         color: black;
-        font-size: 14px;
+        font-size: 24px;
     }
 
     /*Formato para buscador de artículos*/
