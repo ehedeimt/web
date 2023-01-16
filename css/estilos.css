@@ -1,0 +1,663 @@
+/*ESTILOS COMUNES SIN DIFERENCIAR DISPOSITIVO*/
+body {
+    background-color: #1e2a56;
+}
+
+/*Establecer color de fondo*/
+nav,
+footer,
+header {
+    background-color: #f8f5f8;
+}
+
+/*Establecer formatos para distintos apartados de la web color de fondo y esquinas redondeadas*/
+.info,
+.voluntarios,
+.info_form,
+.prestamos {
+    background-color: #f8f5f8;
+    border-radius: 15px;
+}
+
+/*Formato Logotipo*/
+.logotipo {
+    height: 120px;
+    width: 160px;
+}
+
+/*Formato negritas*/
+.bold {
+    font-weight: bold;
+}
+
+/*Formato común enlaces*/
+a:link {
+    color: #e96b19;
+}
+
+a:visited {
+    color: #e96b19;
+}
+
+a:hover {
+    color: #1e2a56;
+
+}
+
+
+/*Estilos para las imágenes*/
+.img_principal {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.img_secundaria {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+
+/*Estilos botones sin diferenciar dispositivo*/
+    /*OPCIÓN BOTÓN SIN DIFERENCIAR DISPOSITIVO*/
+    .boton {
+        text-decoration: none;
+    }
+
+    .boton:link {
+        color: white;
+        background-color: #e96b19;
+        font-family: "Bebas Neue";
+        font-size: 16px;
+        padding: 10px 30px;
+        border-radius: 2em;
+    }
+
+    .boton:visited {
+        color: white;
+        background-color: #e96b19;
+        font-family: "Bebas Neue";
+        font-size: 16px;
+        padding: 10px 30px;
+        border-radius: 2em;
+    }
+
+    .boton:hover {
+        color: white;
+        background-color: #1e2a56;
+        font-family: "Bebas Neue";
+        font-size: 16px;
+        padding: 10px 30px;
+        border-radius: 2em;
+    }
+
+    /*FORMULARIOS*/
+    /*Formato botones formularios*/
+    form button {
+        color: #e96b19;
+        background-color: white;
+        font-family: "Bebas Neue";
+        font-size: 14px;
+        padding: 2px 15px;
+        border-color: #e96b19;
+        border-radius: 2em;
+     }
+
+    form button:hover {
+        color: #1e2a56;
+        background-color: white;
+        font-family: "Bebas Neue";
+        font-size: 14px;
+        padding: 2px 15px;
+        border-color: #1e2a56;
+        border-radius: 2em;
+    }
+
+
+    /*Formatos y colores para formularios sin deferenciar dispositivos*/
+    fieldset {
+        border: none;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    input[type="email"],
+    input[type="password"] {
+        border-color: #e2a74e;
+        background: rgba(226, 177, 68, 0.3);
+        border-radius: 4px;
+    }
+
+    /*Para centrar formulario*/
+    .formulario {
+        margin: auto;
+        width: 400px;
+    }
+
+.contacto ul,
+.rr_ss ul{
+    padding: 0;
+}
+
+
+/*******************************+**********************+**********************+**********************+***********/
+/*EMPEZAMOS VERSIÓN MÓVIL*/
+/*ESTILOS PARA VERSIÓN DISPOSITIVO MÓVIL*/
+@media (min-width: 320px) {
+    /*LAYOUTS Y ESTRUCTURAS DE INFORMACIÓN*/
+    /*Layout para .info móvil*/
+    .info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    /*Layout para footer móvil*/
+    .container_footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    /*Layout para voluntarios móvil*/
+    .voluntarios {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .vol_todos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin: 20px;
+    }
+
+
+
+
+    /*FORMATOS DE TEXTOS*/
+    /*Formatos, estilos colores versión móvil*/
+    nav {
+        font-family: "Bebas Neue";
+        font-size: 20px;
+    }
+
+    /*Formatos títulos de primer y segundo nivel*/
+    .info h1,
+    .contacto h1,
+    .rr_ss h1,
+    .vol_datos h1,
+    .vol_info h1,
+    .info_form h1,
+    .visualiza_articulos h1 {
+        font-family: "Bebas Neue";
+        color: #e2a74e;
+        font-size: 20px;
+    }
+
+    .contacto h2,
+    .rr_ss h2 {
+        font-family: "Bebas Neue";
+        color: #e2a74e;
+        font-size: 16px;
+    }
+
+    /*Formato para buscador de artículos*/
+    .busca_articulos legend {
+        font-family: "Bebas Neue";
+        font-size: 16px;
+        color: #e96b19;
+    }
+
+    .busca_articulos li {
+        list-style: none;
+    }
+
+    /*Formatos textos*/
+    .info p,
+    .vol_datos p,
+    .vol_info p,
+    footer,
+    .info_form_cabecera,
+    .busca_articulos,
+    .formulario,
+    .formulario placeholder {
+        font-family: "Montserrat";
+        color: #000000;
+        font-size: 12px;
+    }
+
+    /*Formatos formularios*/
+    .formulario li,
+    .formulario input {
+        list-style: none;
+        color: #e2a74e;
+    }
+
+    /*Ajuste de textos dentro de apartados*/
+    .apartado,
+    .vol_info {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .prestamos, /*.prestamos aquí hace que se vea más pequeño valorar que hacer*/
+    .info,
+    .voluntarios,
+    .info_form {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    /*Quitar formato a listados Valorar ponerlo sin diferenciar dispositivos*/
+    .contacto li,
+    .rr_ss li {
+        list-style: none;
+    }
+
+    /*Ajuste imágenes de voluntarios*/
+    .vol_datos > figure {
+        margin: auto;
+    }
+
+    /*Ajuste de margen de las imágenes*/
+    .articulo > figure {
+        margin: auto;
+    }
+
+    /*Formato colores fondo apartado voluntario*/
+    .vol_datos {
+        background-color: rgba(233, 107, 25, 0.15);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin-bottom: 5%;
+    }
+
+    /*Ajuste sangría en artículos*/
+    .vol_datos h1,
+    .vol_datos p{
+        margin: 8%;
+    }
+
+
+    /*Formato colores fondo apartado artículos*/
+    .articulo {
+        background-color: rgba(233, 107, 25, 0.15);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin-bottom: 5%;
+        padding-bottom: 2%;
+    }
+
+    /*Ajuste sangría en artículos*/
+    .articulo h1,
+    .articulo p {
+        margin: 6%;
+    }
+
+
+    /*FORMATO PARA BOTONES REDES SOCIALES*/
+    /*Crear borde para icono red social*/
+    .rr_ss li {
+        border: 4px solid #e96b19;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+    /*Efecto hover para borde red social*/
+    .rr_ss li:hover {
+        border: 4px solid #1e2a56;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+     /*Cambio de tono a iconos red social*/
+     .rr_ss li:nth-child(1) img,
+     .rr_ss li:nth-child(3) img {
+         filter: invert(45%) sepia(48%) saturate(5598%) hue-rotate(359deg) brightness(101%) contrast(83%);
+     }
+
+     .rr_ss li:nth-child(2) img {
+         filter: invert(50%) sepia(48%) saturate(5598%) hue-rotate(359deg) brightness(101%) contrast(83%);
+     }
+
+     .rr_ss li:nth-child(4) img {
+         filter: brightness(150%) contrast(90%);
+     }
+
+    /*Ajustar dentro de borde*/
+    .rr_ss img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Alinear iconos redes sociales*/
+    .rr_ss ul {
+        display: flex;
+        justify-content: left;
+    }
+
+}
+
+
+/*FINALIZAMOS VERSIÓN MÓVIL*/
+
+
+
+
+/*******************************+**********************+**********************+**********************+***********/
+/*EMPEZAMOS VERSIÓN ESCRITORIO*/
+/*ESTILOS PARA VERSIÓN ESCRITORIO*/
+@media (min-width: 768px) {
+    /*LAYOUTS Y ESTRUCTURAS DE INFORMACIÓN*/
+    /*Layout para info y formulario cabecera*/
+    .info,
+    .info_form_cabecera {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    /*Layout para footer y artículos*/
+    .container_footer,
+    .info_articulos,
+    .visualiza_articulos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 20px;
+    }
+
+    /*Layouts para voluntarios*/
+    .voluntarios {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .vol_todos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 20px;
+        gap: 20px;
+    }
+
+    /*Layouts para info artículos*/
+    .info_articulos {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .visualiza_articulos {
+        column-gap: 5%;
+        row-gap: 1%;
+    }
+
+    .img_secundaria {
+        height: 100%;
+        width: 100%;
+    }
+
+    /*Ajuste de margen de las imágenes*/
+    .articulo figure {
+        margin: 0%;
+    }
+
+
+
+
+
+    /*FORMATOS DE TEXTOS*/
+    nav {
+        font-family: "Bebas Neue";
+        font-size: 24px;
+    }
+
+    /*Formatos títulos de primer y segundo nivel*/
+    .info h1,
+    .vol_datos h1,
+    .vol_info h1,
+    .info_form h1 {
+        font-family: "Bebas Neue";
+        color: #e2a74e;
+        font-size: 26px;
+    }
+
+    .contacto h2,
+    .rr_ss h2 {
+        font-family: "Bebas Neue";
+        color: #e2a74e;
+        font-size: 18px;
+    }
+
+    .info p,
+    .vol_datos p,
+    .vol_info p,
+    footer,
+    .info_form_cabecera,
+    .formulario {
+        font-family: "Montserrat";
+        color: #000000;
+        font-size: 14px;
+    }
+
+    /*Formato para buscador de artículos*/
+    .busca_articulos legend {
+        font-family: "Bebas Neue";
+        font-size: 22px;
+        color: #e96b19;
+    }
+
+    /*Ajuste texto dentro de apartados*/
+    .apartado,
+    .vol_info {
+        padding-left: 25px;
+        padding-right: 100px;
+    }
+
+    .prestamos,
+    .info,
+    .voluntarios,
+    .info_form {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    /*Quitar formato a listados Valorar ponerlo sin diferenciar dispositivos*/
+    .contacto li,
+    .rr_ss li {
+        list-style: none;
+    }
+
+    .busca_articulos li {
+        list-style: none;
+    }
+
+
+    /*FORMATO PARA BOTONES REDES SOCIALES*/
+    /*Crear borde para icono red social*/
+    .rr_ss li {
+        border: 4px solid #e96b19;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+    /*Efecto hover para borde red social*/
+    .rr_ss li:hover {
+        border: 4px solid #1e2a56;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+
+    /*Cambio de tono a iconos red social*/
+    .rr_ss li:nth-child(1) img,
+    .rr_ss li:nth-child(3) img {
+        filter: invert(45%) sepia(48%) saturate(5598%) hue-rotate(359deg) brightness(101%) contrast(83%);
+    }
+
+    .rr_ss li:nth-child(2) img {
+        filter: invert(50%) sepia(48%) saturate(5598%) hue-rotate(359deg) brightness(101%) contrast(83%);
+    }
+
+    .rr_ss li:nth-child(4) img {
+        filter: brightness(150%) contrast(90%);
+    }
+
+    /*Ajustar dentro de borde*/
+    .rr_ss img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Alinear iconos redes sociales*/
+    .rr_ss ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container_footer {
+        grid-template-columns: 5fr 1fr;
+    }
+}
+/*FINALIZAMOS VERSIÓN ESCRITORIO*/
+
+
+
+
+/*CONFIGURACIÓN PARA MENÚ*/
+/*MENÚ ESCRITORIO*/
+@media (min-width: 768px) {
+    /*No muestra el botón si la pantalla no es pequeña*/
+    .menu-button {
+        display: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    
+    .cabecera {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        padding-right: 20px;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /*Establece formatos de letra y espacios al menú y elimina el formato lista*/
+    .menu > li {
+        list-style: none;
+        display: inline;
+        font-size: 20px;
+        padding-right: 30px;
+        padding-left: 60px;
+    }
+
+    .menu > li > a {
+        text-decoration: none;
+    }
+
+    .menu > li > a:link {
+        color: #000000;
+        font-family: "Bebas Neue";
+        font-size: 22px;
+    }
+
+    .menu > li > a:visited {
+        color: #000000;
+    }
+
+    .menu > li > a:hover {
+        color: #e96b19;
+    }
+
+
+
+
+}
+/*MENÚ HAMBURGUESA*/
+@media (max-width: 768px) {
+    /*Configura la posición del botón menú*/
+    .menu-button {
+        visibility: visible;
+        display: flex;
+        margin: auto;
+        position: absolute;
+        right: 10%;
+        top: 12%;
+        border: none;
+        background-color: transparent;
+    }
+
+    .menu-button > img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /*Configura una columna para que el menu empuje el contenido*/
+    .cabecera {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    /*Centramos el menu y lo ponemos en columna y le quitamos el padding*/
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    nav li {
+        border: 1px solid #e96b19;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu > li {
+        list-style: none;
+        display: inline;
+        font-size: 20px;
+        padding-right: 30px;
+        padding-left: 60px;
+    }
+
+    .menu > li > a {
+        text-decoration: none;
+    }
+
+    .menu > li > a:link {
+        color: #000000;
+        font-family: "Bebas Neue";
+        font-size: 22px;
+    }
+
+    .menu > li > a:visited {
+        color: #000000;
+    }
+
+    .menu > li > a:hover {
+        color: #e96b19;
+    }
+
+}
